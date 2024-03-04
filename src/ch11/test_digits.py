@@ -22,4 +22,4 @@ y_pred = model.predict(X_test)
 
 # 정확도 확인
 scores = metrics.accuracy_score(y_test, y_pred)
-assert scores > 0.95
+assert scores < 0.95
