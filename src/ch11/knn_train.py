@@ -19,14 +19,14 @@ class KnnTrain:
         self._k = k
 
     @property
-    def data(self) -> T.List[T.List[float]]:
+    def data(self) -> np.ndarray:
         if len(self._data) == 0:
             raise ValueError('데이터 입력 전 입니다. 데이터를 입력해주세요.')
         else:
             return self._data
 
     @data.setter
-    def data(self, newData: T.List[T.List[float]]):
+    def data(self, newData: np.ndarray):
         self._data = np.array(newData)
 
     @property
