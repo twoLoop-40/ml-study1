@@ -21,4 +21,4 @@ def test_knn_train():
 
     y_pred = knn_model.predict(X_test)
     scores = metrics.accuracy_score(y_test, y_pred)
-    assert scores < 0.95
+    assert scores > 0.95
